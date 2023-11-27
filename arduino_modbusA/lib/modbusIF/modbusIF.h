@@ -1,7 +1,7 @@
 // DADOS: pino LOW = Receiver HIGH e Driver LOW   --> só recebe
 //        pino HIGH = Receiver LOW e Driver HIGH  --> só envia
 
-
+enum {OFF, ON};
 class modbusIF{
   public:
     modbusIF(byte pin, uint32_t baud);                // função para criar instância
