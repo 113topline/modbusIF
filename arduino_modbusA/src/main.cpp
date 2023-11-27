@@ -1,8 +1,19 @@
 #include <Arduino.h>
 #include <modbusIF.h>
 
+modbusIF MAX485(13, 9600);
+
 void setup() {
-  
+  Serial.begin(9600);
+  Serial.println("iniciando teste...");
+  delay(2000);
+  MAX485.writeCoil(10, ON);
+  delay(1000);
+  MAX485.readCoil(10);
+  delay(1000);
+  MAX485.writeFloat(10, 512);
+  delay(1000);
+  MAX485.readFloat(0);
 }
 
 void loop() {
