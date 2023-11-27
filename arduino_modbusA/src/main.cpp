@@ -9,7 +9,6 @@ void loop() {
   // put your main code here, to run repeatedly:
 
 }
-<<<<<<< HEAD
 
 
 
@@ -76,7 +75,5 @@ void loop() {
 */
 
 
-=======
 
 //teste
->>>>>>> 1a6208e0a9f403362f736351bdf848cb2c133082
